@@ -1,0 +1,19 @@
+girders_content_h1:
+  scrape_link: girders_link
+  tag: h1
+  value: sample h1
+
+girders_content_h2:
+  scrape_link: girders_link
+  tag: h2
+  value: sample h2
+
+girders_content_h3:
+  scrape_link: girders_link
+  tag: h3
+  value: sample h3
+
+girders_content_a:
+  scrape_link: girders_link
+  tag: a
+  value: http://www.yahoo.com
