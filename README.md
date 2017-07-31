@@ -8,16 +8,20 @@
 
 ### Get scrape links
 Headers
-key: Content-Type
-value: application/vnd.api+json
-/api/scrape-links
+* key: Content-Type
+* value: application/vnd.api+json
+```sh
+GET /api/scrape-links
+```
 
 ### Create scrape link
+* Headers
+* key: Content-Type
+* value: application/vnd.api+json
+```sh
 POST /api/scrape-links
-Headers
-key: Content-Type
-value: application/vnd.api+json
-Body
+```
+* Body
 ```sh
 {
   "data": {
@@ -30,15 +34,19 @@ Body
 ```
 ###  Filter scrape link by url
 Headers
-key: Content-Type
-value: application/vnd.api+json
-/api/scrape-links?filter[url]=http://girders.org/blog/2016/08/26/building-rails-apis-with-jsonapi-and-jsonapi-resources/
+* key: Content-Type
+* value: application/vnd.api+json
+```sh
+GET /api/scrape-links?filter[url]=http://girders.org/blog/2016/08/26/building-rails-apis-with-jsonapi-and-jsonapi-resources/
+```
 
 ### Get scrape contents filtered by scrape link url
 Headers
-key: Content-Type
-value: application/vnd.api+json
-/api/scrape-contents?include=scrape-link&filter[scrape_links.url]=http://girders.org/blog/2016/08/26/building-rails-apis-with-jsonapi-and-jsonapi-resources/
+* key: Content-Type
+* value: application/vnd.api+json
+```sh
+GET /api/scrape-contents?include=scrape-link&filter[scrape_links.url]=http://girders.org/blog/2016/08/26/building-rails-apis-with-jsonapi-and-jsonapi-resources/
+```
 
 ### Testing
 
